@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { annotate } from '@playwright/test'
 
 test('should return a valid list of posts', async ({ request }) => {
   const response = await request.get('https://jsonplaceholder.typicode.com/posts');
